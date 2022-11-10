@@ -11,6 +11,7 @@ body {
     min-height: 100vh;
     font-family: 'Montserrat', sans-serif;
     background-color: rgb(233, 233, 233);
+    margin-left: -400px;
 }
 
 .counter-app {
@@ -37,6 +38,7 @@ body {
     background-position: center;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+    z-index:100;
 }
 
 .settings {
@@ -59,12 +61,12 @@ body {
     border-radius: 15px;
     background-color: white;
 
-    opacity: 100%;
+    opacity: 0;
     transition: opacity .3s, transform .5s;
 }
 
 .active {
-    opacity: 100%;
+    opacity: 1;
     transform: translateX(410px)
 }
 
@@ -104,6 +106,8 @@ body {
     flex-direction: column;
     background-color: #fff;
     z-index: 100;
+    border-bottom-right-radius: 10px ;
+    border-bottom-left-radius: 10px;
 }
 
 .time-cards {
